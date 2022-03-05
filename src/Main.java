@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         File file = new File("input.txt");
         HashMap<String, HashSet<String>> activeUsers =  createActiveUsersMap(file);
-        System.out.println(getDailyUsersCount(activeUsers,"01/01/2020"));
+        System.out.println(getDailyUsersCount(activeUsers,"02/01/2020"));
 
     }
 
