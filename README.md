@@ -19,4 +19,19 @@ The second function int getDailyUsersCount (HashMap<String, HashSet <String>> ma
   First, you need to create the daily active users map and to do it you need to run createActiveUsersMap function.
   once you do it, you can run the second function with map you created and the specific date.
   
-  
+
+
+--------TIME AND SPACE COMPLEXITY--------------
+
+Iterate all lines from the file = O(N) - when N is the number of rows in the file.
+
+two split = o(2K) = O(K) - when k is the number of chars in line each line.
+
+Hashmap actions (contains, get, insert) = O(1) in avarage
+Hashset actions (contains, get, inset) = o(1) in avarage
+
+Total time complexity = o(N*K)
+
+I used hashmap and hashset data structures for efficient actions. it can be slight more efficient if i was make only one split, and not two. i made twh because the each line is not so long according to the example template.
+
+Total space complexity = o(N*M) - when N is for the hashmap and m is for each hashset.
